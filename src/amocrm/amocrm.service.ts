@@ -42,7 +42,7 @@ export class AmocrmService {
     const body: IToken = {
       client_id: process.env.INTEGRATION_ID,
       client_secret: process.env.SECRET_KEY,
-      refresh_token: process.env.REFRESH_TOKEN,
+      refresh_token: this.refreshToken || process.env.REFRESH_TOKEN,
       grant_type: 'refresh_token',
       redirect_uri: 'https://test-v0hu.onrender.com/',
     };
