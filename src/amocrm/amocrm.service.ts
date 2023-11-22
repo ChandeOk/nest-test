@@ -25,7 +25,7 @@ export class AmocrmService {
   private baseURL = 'https://chandeok.amocrm.ru';
 
   constructor(private readonly httpService: HttpService) {
-    this.init();
+    // this.init();
   }
 
   async init() {
